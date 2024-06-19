@@ -1,4 +1,4 @@
-import sys
+import sys , os
 from langchain_postgres import PGVector
 from langchain_postgres.vectorstores import PGVector
 from langchain_community.embeddings import OllamaEmbeddings
@@ -14,8 +14,8 @@ from langchain.globals import set_debug
 from langchain_core.runnables import RunnableLambda , Runnable
 
 
-os.set_environment["OLLAMA_MAX_LOADED_MODELS"]=4
-os.set_environment["OLLAMA_NUM_PARALLEL"]=10
+os.environ["OLLAMA_MAX_LOADED_MODELS"]="4"
+os.environ["OLLAMA_NUM_PARALLEL"]="10"
 
 set_debug(True)
 

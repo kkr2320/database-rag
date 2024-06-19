@@ -1,85 +1,4 @@
 {'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here is the Bal
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
-<Response [200]>
-
-       Here is the Balance She
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
-<Response [200]>
-
-       Here is
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here is the
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
-<Response [200]>
-
-       Here is
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here is the Balance Sheet for Discover Financial Services as of March 31, 2023:
-
-       Assets:
-       - Cash and cash equivalents: $10,130 million
-       - Restricted cash: $33 million
-       - Investment securities (includes available-for-sale securities of $12,017 and $11,987 reported at fair value with associated amortized cost of $12,075 and $12,167 at March 31, 2023 and December 31, 2022, respectively): $12,248 million
-       - Loan receivables: $112,674 million
-       - Allowance for credit losses: $(7,691) million
-       - Net loan receivables: $104,983 million
-       - Premises and equipment, net: $1,031 million
-       - Goodwill: $255 million
-       - Other assets: $4,381 million
-       - Total assets: $133,061 million
-
-       Liabilities and Stockholders' Equity:
-       - Deposits (Interest-bearing deposit accounts: $94,319 million, Non-interest bearing deposit accounts: $1,421 million): $95,740 million
-       - Long-term borrowings: $18,163 million
-       - Accrued expenses and other liabilities: $4,843 million
-       - Total liabilities: $118,746 million
-       - Commitments, contingencies and guarantees: Not provided in the context
-       - Stockholders' Equity:
-          - Common stock, par value $0.01 per share; 2,000,000,000 shares authorized; 570,460,075 and 569,689,007 shares issued at March 31, 2023 and December 31, 2022, respectively: $6 million
-          - Preferred stock, par value $0.01
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
-<Response [200]>
-
-       Here is the Balance Sheet for Discover Financial Services as of March 31, 2024:
-
-      Assets:
-      Cash and cash equivalents $ 14,004
-      Restricted cash 439
-      Investment securities 13,522
-      Loan receivables 126,555
-      Allowance for credit losses (9,258)
-      Net loan receivables 117,297
-      Premises and equipment, net 1,107
-      Goodwill 255
-      Other assets 6,065
-      Total assets $ 152,689
-
-      Liabilities and Stockholders' Equity:
-      Deposits
-      Interest-bearing deposit accounts $ 108,
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here is the Balance Sheet for Discover Financial Services as of March 31, 2023:
-
-       Assets:
-       - Cash and cash equivalents: $10,130 million
-       - Restricted cash: $33 million
-       - Investment securities (includes available-for-sale securities of $12,017 and $11,987 reported at fair value with associated amortized cost of $12,075 and $12,167 at March 31, 2023 and December 31, 2022, respectively): $12,248 million
-       - Loan receivables: $112,674 million
-       - Allowance for credit losses
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
 <Response [500]>
 Traceback (most recent call last):
   File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
@@ -95,91 +14,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-06-30','YYYY-MM-DD') "}
-<Response [500]>
-Traceback (most recent call last):
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-09-30','YYYY-MM-DD') "}
-<Response [500]>
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [500]>
-Traceback (most recent call last):
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return complexjson.loads(self.text, **kwargs)
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    return _default_decoder.decode(s)
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-Traceback (most recent call last):
-
-During handling of the above exception, another exception occurred:
-
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
+  File "/home/ec2-user/databaserag/database-rag/lc_finance_assistant_api_client.py", line 24, in <module>
     j = response.json()
   File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
@@ -200,28 +35,7 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
+  File "/home/ec2-user/databaserag/database-rag/lc_finance_assistant_api_client.py", line 24, in <module>
     j = response.json()
   File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
@@ -242,7 +56,28 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
+  File "/home/ec2-user/databaserag/database-rag/lc_finance_assistant_api_client.py", line 24, in <module>
+    j = response.json()
+  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
+<Response [500]>
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ec2-user/databaserag/database-rag/lc_finance_assistant_api_client.py", line 24, in <module>
     j = response.json()
   File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
@@ -250,64 +85,11 @@ requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 {'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-09-30','YYYY-MM-DD') "}
 <Response [200]>
 
-       Based
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-06-30','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here
+      
 {'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
 <Response [200]>
 
-       Here
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-06-30','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here is the Balance Sheet for Discover Financial Services as of June 30, 2023:
-
-       Assets:
-       - Cash and cash equivalents: $8,605
-       - Restricted cash: $39
-       - Investment securities (includes available-for-sale securities of $13,221 and $11,987 reported at fair value with associated amortized cost of $13,478 and $12,167 at June 30, 2023 and December 31, 2022, respectively): $13,466
-       - Loan receivables: $117,906
-       - Allowance for credit losses: $(8,064)
-       - Net loan receivables: $109,842
-       - Premises and equipment, net: $1,053
-       - Goodwill: $255
-       - Other assets: $4,822
-       - Total assets
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
-<Response [200]>
-
-       Here is the 2
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [200]>
-
-       Here is the Balance
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-09-30','YYYY-MM-DD') "}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+      
 {'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-06-30','YYYY-MM-DD') "}
 <Response [500]>
 Traceback (most recent call last):
@@ -324,134 +106,52 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
+  File "/home/ec2-user/databaserag/database-rag/lc_finance_assistant_api_client.py", line 24, in <module>
     j = response.json()
   File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
     raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
 requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 {'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+<Response [200]>
 
-During handling of the above exception, another exception occurred:
+       Based on the provided financial statement, the balance sheet of Discover Financial Services as of March 31, 2023, is as follows:
 
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+**Assets:**
 
-During handling of the above exception, another exception occurred:
+1. Cash and cash equivalents: $10,130 million
+2. Restricted cash: $33 million
+3. Investment securities: $12,248 million
+4. Loan receivables: $104,983 million
+5. Allowance for credit losses: ($7,691) million
+6. Net loan receivables: $104,983 million
+7. Premises and equipment, net: $1,031 million
+8. Goodwill: $255 million
+9. Other assets: $4,381 million
 
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-03-31','YYYY-MM-DD') "}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+**Total assets:** $133,061 million
 
-During handling of the above exception, another exception occurred:
+**Liabilities:**
 
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-09-30','YYYY-MM-DD') "}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+1. Deposits:
+	* Interest-bearing deposit accounts: $94,319 million
+	* Non-interest bearing deposit accounts: $1,421 million
+	Total deposits: $95,740 million
+2. Long-term borrowings: $18,163 million
+3. Accrued expenses and other liabilities: $4,843 million
 
-During handling of the above exception, another exception occurred:
+**Total liabilities:** $118,746 million
 
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-{'question': 'Report 2023 Discover Financial Services Balance Sheet ', 'vectordb_args': "doc_date = to_date('2023-06-30','YYYY-MM-DD') "}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+**Stockholders' equity:**
 
-During handling of the above exception, another exception occurred:
+1. Common stock: $6 million
+2. Preferred stock: $1,056 million
+3. Additional paid-in capital: $4,493 million
+4. Retained earnings: $29,292 million
+5. Accumulated other comprehensive loss: ($235) million
+6. Treasury stock, at cost: ($20,297) million
 
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-{'question': 'Report 2024 Discover Financial Services Balance Sheet ', 'vectordb_args': "to_char(doc_date,'YYYY') = '2024'"}
-<Response [500]>
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 974, in json
-    return complexjson.loads(self.text, **kwargs)
-  File "/opt/conda/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/conda/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+**Total stockholders' equity:** $14,315 million
 
-During handling of the above exception, another exception occurred:
+**Total liabilities and stockholders' equity:** $133,061 million
 
-Traceback (most recent call last):
-  File "/home/ec2-user/databaserag/lc_finance_assistant_api_client.py", line 24, in <module>
-    j = response.json()
-  File "/opt/conda/lib/python3.10/site-packages/requests/models.py", line 978, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+Please note that this is an unaudited condensed consolidated balance sheet and may not include all the information required for a complete and comprehensive financial statement.

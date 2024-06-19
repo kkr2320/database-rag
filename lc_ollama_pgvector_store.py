@@ -5,10 +5,11 @@ from langchain_postgres.vectorstores import PGVector
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain_postgres.vectorstores import DistanceStrategy
 from typing import List
+import os , sys
 
 embeddings = OllamaEmbeddings(model="snowflake-arctic-embed:335m")
 
-file_path = "d77cf8fd-03ce-4fa5-a09c-bcb4e8d2e6c7.pdf"
+file_path = sys.argv[1]
 
 loader = PyPDFLoader(file_path=file_path)
 
