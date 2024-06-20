@@ -22,7 +22,7 @@ set_debug(True)
 
 embeddings = OllamaEmbeddings(model="snowflake-arctic-embed:335m")
 
-model = Ollama(model="llama3:latest" , num_gpu=4 )
+model = Ollama(model="llama3:70b" , num_gpu=4 )
 
 connection_string = "postgresql+psycopg://pgadm:pgadm1234#@p1-east.cluster-cafary0vpprp.us-east-1.rds.amazonaws.com:5432/db1"
 
