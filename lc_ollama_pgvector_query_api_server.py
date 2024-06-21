@@ -36,6 +36,7 @@ vectorstore = PGVector(
      connection=connection_string,
      distance_strategy = DistanceStrategy.COSINE,
      use_jsonb=True,
+     async_mode=True,
  )
 
 #print(vectorstore.similarity_search(sys.argv[1], k=10))
