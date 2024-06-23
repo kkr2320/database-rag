@@ -7,7 +7,7 @@ prompts = [
     "The future of AI is",
 ]
 
-sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
+sampling_params = SamplingParams(temperature=0.8, top_p=0.95,max_tokens=1000, skip_special_tokens=True)
 
 llm = LLM(model="meta-llama/Meta-Llama-3-8B-Instruct" )
 
