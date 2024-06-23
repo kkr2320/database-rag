@@ -9,8 +9,13 @@ pretrained_model_dir = "meta-llama/Meta-Llama-3-8B-Instruct"
 quantized_model_dir = "meta-llama/Meta-Llama-3-8B-Instruct-Q4-GPTQ"
 
 
-# Effective Quantization is achived using a good dataset. The datasets have splits [ train , validation] and colums [ instruction, input , output ] .
-# Note the colums within dataset varies depends on the dataset
+#Self Notes - Krishna
+# Effective Quantization is achived using a good dataset. The datasets have splits [ train , validation].
+# Note the colums within dataset varies depends on how the dataset is created. Usually referred in Dict object. 
+# In this dataset , there are columns [ instruction,input,output]. testing by grouping logically for each instruction. 
+# The input_id.shapes can contain negative integers. Need to understand why ?
+
+# Overall use a good dataset with enough samples to make the output quantization yeilds with 0 avarage-loss. Any loss greater than 1 should be looked into which means bad dataset. 
 
 def main():
     tokenizer = AutoTokenizer.from_pretrained(pretrained_model_dir, use_fast=True)
