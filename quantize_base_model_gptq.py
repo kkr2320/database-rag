@@ -18,18 +18,30 @@ quantized_model_dir = "meta-llama/Meta-Llama-3-8B-Instruct-Q4-GPTQ"
 # Overall use a good dataset with enough samples to make the output quantization yeilds with 0 avarage-loss. Any loss greater than 1 should be looked into which means bad dataset. 
 
 def main():
-    tokenizer = AutoTokenizer.from_pretrained(pretrained_model_dir, use_fast=True)
-    n_samples = 2000
-    data = load_dataset("causal-lm/finance", split=f"train[:{n_samples}]+validation[:{n_samples}]")
-    tokenized_data = tokenizer("\n\n".join(data['instruction']), return_tensors='pt')
+    tokenizer = AutoTokenizer.from_pretrained(pretrained_model_dir, use_fast=True, skip_special_tokens=True)
+
+#    examples = [
+#    tokenizer(
+#        "auto-gptq is an easy-to-use model quantization library with user-friendly apis, based on GPTQ algorithm."
+#    )
+#    ]
+#    print(examples)
+
+    n_samples = 1024
+    data = load_dataset("causal-lm/finance", split=f"train[:{n_samples*5}]")
+    tokenized_data = [ tokenizer(data['output'] , return_tensors="pt") ]
+#    print(tokenized_data)
+
 
     examples_ids = []
     for _ in range(n_samples):
       i = random.randint(-9999999999999999999999999999999, tokenized_data.input_ids.shape[1] - tokenizer.model_max_length - 1)
+#      i = random.randint(0, tokenized_data.input_ids.shape[1] - tokenizer.model_max_length - 1)
       j = i + tokenizer.model_max_length
       input_ids = tokenized_data.input_ids[:, i:j]
       attention_mask = torch.ones_like(input_ids)
       examples_ids.append({'input_ids': input_ids, 'attention_mask': attention_mask})
+#    print(example_ids)
 
     quantize_config = BaseQuantizeConfig(
         bits=4,  # quantize model to 4-bit

@@ -163,10 +163,10 @@ summarizer_prompt_template = PromptTemplate(template=_get_llm_prompt("summarizer
 model_task="text-generation"
 tokenizer = AutoTokenizer.from_pretrained(llm_model_name)
 tokenizer.pad_token = tokenizer.eos_token
-llm_model = AutoModelForCausalLM.from_pretrained(llm_model_name, torch_dtype=torch.float16, device_map="cuda:0")
+llm_model = AutoModelForCausalLM.from_pretrained(llm_model_name, torch_dtype=torch.float16, device_map="auto")
 #generation_config,unused_kwargs = GenerationConfig.from_pretrained( llm_model_name, do_sample=True, return_unused_kwargs=True, max_time=90)
 #llm_model.generation_config = generation_config
-pipe = pipeline(model_task, tokenizer=tokenizer, model=llm_model, max_new_tokens=500 )
+pipe = pipeline(model_task, tokenizer=tokenizer, model=llm_model, max_new_tokens=2000 )
 if llm_model_name.startswith("meta") :
    terminators = [
      pipe.tokenizer.eos_token_id,

@@ -1,0 +1,69 @@
+WARNING 06-27 03:49:25 config.py:217] awq quantization is not fully optimized yet. The speed can be slower than non-quantized models.
+2024-06-27 03:49:27,620	INFO worker.py:1770 -- Started a local Ray instance.
+INFO 06-27 03:49:28 config.py:623] Defaulting to use mp for distributed inference
+INFO 06-27 03:49:28 llm_engine.py:161] Initializing an LLM engine (v0.5.0.post1) with config: model='./quantized/meta-llama/Meta-Llama-3-8B-Instruct-awq/', speculative_config=None, tokenizer='./quantized/meta-llama/Meta-Llama-3-8B-Instruct-awq/', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, disable_custom_all_reduce=False, quantization=awq, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=0, served_model_name=./quantized/meta-llama/Meta-Llama-3-8B-Instruct-awq/)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 06-27 03:49:29 selector.py:131] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 06-27 03:49:29 selector.py:51] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:31 selector.py:131] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:31 selector.py:51] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:31 selector.py:131] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:31 selector.py:51] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:31 selector.py:131] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:31 selector.py:51] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:32 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:32 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:32 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+INFO 06-27 03:49:33 utils.py:637] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:33 utils.py:637] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:33 utils.py:637] Found nccl from library libnccl.so.2
+INFO 06-27 03:49:33 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:33 utils.py:637] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:33 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:33 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:33 pynccl.py:63] vLLM is using nccl==2.20.5
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/multiprocessing/resource_tracker.py", line 209, in main
+    cache[rtype].remove(name)
+KeyError: '/psm_221f5e38'
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/multiprocessing/resource_tracker.py", line 209, in main
+    cache[rtype].remove(name)
+KeyError: '/psm_221f5e38'
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/multiprocessing/resource_tracker.py", line 209, in main
+    cache[rtype].remove(name)
+KeyError: '/psm_221f5e38'
+[1;36m(VllmWorkerProcess pid=17980)[0;0m WARNING 06-27 03:49:33 custom_all_reduce.py:166] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+WARNING 06-27 03:49:33 custom_all_reduce.py:166] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+[1;36m(VllmWorkerProcess pid=17981)[0;0m WARNING 06-27 03:49:33 custom_all_reduce.py:166] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+[1;36m(VllmWorkerProcess pid=17982)[0;0m WARNING 06-27 03:49:33 custom_all_reduce.py:166] Custom allreduce is disabled because it's not supported on more than two PCIe-only GPUs. To silence this warning, specify disable_custom_all_reduce=True explicitly.
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:33 selector.py:131] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:33 selector.py:51] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:33 selector.py:131] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:33 selector.py:51] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:33 selector.py:131] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:33 selector.py:51] Using XFormers backend.
+INFO 06-27 03:49:33 selector.py:131] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 06-27 03:49:33 selector.py:51] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:37 model_runner.py:160] Loading model weights took 1.3662 GB
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:37 model_runner.py:160] Loading model weights took 1.3662 GB
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:37 model_runner.py:160] Loading model weights took 1.3662 GB
+INFO 06-27 03:49:37 model_runner.py:160] Loading model weights took 1.3662 GB
+INFO 06-27 03:49:40 distributed_gpu_executor.py:56] # GPU blocks: 19843, # CPU blocks: 8192
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:42 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:42 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 06-27 03:49:42 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 06-27 03:49:42 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:42 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:42 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:42 model_runner.py:889] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:42 model_runner.py:893] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=17981)[0;0m INFO 06-27 03:49:57 model_runner.py:965] Graph capturing finished in 14 secs.
+[1;36m(VllmWorkerProcess pid=17980)[0;0m INFO 06-27 03:49:57 model_runner.py:965] Graph capturing finished in 14 secs.
+[1;36m(VllmWorkerProcess pid=17982)[0;0m INFO 06-27 03:49:57 model_runner.py:965] Graph capturing finished in 14 secs.
+INFO 06-27 03:49:57 model_runner.py:965] Graph capturing finished in 14 secs.
+INFO:     Started server process [14974]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:8001 (Press CTRL+C to quit)
