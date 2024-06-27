@@ -1,6 +1,6 @@
 /opt/conda/lib/python3.10/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
   warnings.warn(
-INFO:     Started server process [1138]
+INFO:     Started server process [40517]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://localhost:8002 (Press CTRL+C to quit)
@@ -20,52 +20,28 @@ INFO:     Uvicorn running on http://localhost:8002 (Press CTRL+C to quit)
 
 [1;31;40mLANGSERVE:[0m ⚠️ Using pydantic 2.7.4. OpenAPI docs for invoke, batch, stream, stream_log endpoints will not be generated. API endpoints and playground should work as expected. If you need to see the docs, you can downgrade to pydantic 1. For example, `pip install pydantic==1.10.13`. See https://github.com/tiangolo/fastapi/issues/10360 for details.
 
-Report 2024 Discover Financial Balance Sheet. Use internet to find the information on SEC.gov website. Produce only english text and numbers
-INFO:     127.0.0.1:56262 - "POST /dfsai/embedtext/invoke HTTP/1.1" 500 Internal Server Error
-ERROR:    Exception in ASGI application
-Traceback (most recent call last):
-  File "/opt/conda/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 399, in run_asgi
-    result = await app(  # type: ignore[func-returns-value]
-  File "/opt/conda/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 70, in __call__
-    return await self.app(scope, receive, send)
-  File "/opt/conda/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
-    await super().__call__(scope, receive, send)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
-    raise exc
-  File "/opt/conda/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
-    await self.app(scope, receive, _send)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 65, in __call__
-    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
-    raise exc
-  File "/opt/conda/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/routing.py", line 756, in __call__
-    await self.middleware_stack(scope, receive, send)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/routing.py", line 776, in app
-    await route.handle(scope, receive, send)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/routing.py", line 297, in handle
-    await self.app(scope, receive, send)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/routing.py", line 77, in app
-    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
-    raise exc
-  File "/opt/conda/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
-    await app(scope, receive, sender)
-  File "/opt/conda/lib/python3.10/site-packages/starlette/routing.py", line 72, in app
-    response = await func(request)
-  File "/opt/conda/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
-    raw_response = await run_endpoint_function(
-  File "/opt/conda/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
-    return await dependant.call(**values)
-  File "/opt/conda/lib/python3.10/site-packages/langserve/server.py", line 530, in invoke
-    return await api_handler.invoke(request)
-  File "/opt/conda/lib/python3.10/site-packages/langserve/api_handler.py", line 845, in invoke
-    self._InvokeResponse(
-  File "/opt/conda/lib/python3.10/site-packages/pydantic/v1/main.py", line 341, in __init__
-    raise validation_error
-pydantic.v1.error_wrappers.ValidationError: 1 validation error for dfsai_embedtextInvokeResponse
-output -> __root__
-  str type expected (type=type_error.str)
+INFO:     127.0.0.1:35732 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54186 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48576 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58270 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36146 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54012 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47534 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43950 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52446 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46066 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44188 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41492 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36048 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55874 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36758 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57186 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35400 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39646 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36978 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38354 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40620 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60534 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34116 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33074 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45162 - "POST /dfsai/embedtext/invoke HTTP/1.1" 200 OK

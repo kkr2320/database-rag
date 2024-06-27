@@ -5,9 +5,9 @@ from urllib.parse import urlparse
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from pgvector.psycopg import register_vector
 from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.embeddings  import HuggingFaceBgeEmbeddings
 from langchain_core.documents import Document
 from typing import List
+import requests
 
 file_path = sys.argv[3]
 
@@ -31,18 +31,20 @@ cleaned_data: List[Document] = []
 for doc in data:
   cleaned_data.append(Document(page_content=doc.page_content.replace('\n',' '), metadata=doc.metadata))
 
-print(cleaned_data[0].metadata)
+#print(cleaned_data[0].metadata)
 
-connection_string = "postgresql://pgadm:pgadm1234#@p1-east.cluster-cafary0vpprp.us-east-1.rds.amazonaws.com:5432/db1"
+connection_string = "postgresql://{us1}:{pw1}@p1-east.cluster-cafary0vpprp.us-east-1.rds.amazonaws.com:5432/db1".format(us1=sys.argv[4] , pw1=sys.argv[5]) 
 
+url = "http://localhost:8002/dfsai/embedtext/invoke" 
 
 with psycopg.connect(connection_string) as conn :
   register_vector(conn)
   print("test")
   for doc in cleaned_data : 
     ## Generate Embeedings for each page 
-    embedding = embeddings.embed_query (doc.page_content) 
-    embed_vector = np.array(embedding)
+    response = requests.post( url, json={"input": doc.page_content})
+    embedding = response.json()
+    embed_vector = np.array(embedding['output'])
     rslt = conn.execute("INSERT INTO dfs_financial_documents ( doc_type , doc_date , doc_page_content , embeddings , additional_metadata ) VALUES ( %s , %s , %s , %s , %s ) " , 
                                                        ( sys.argv[1], sys.argv[2] , doc.page_content , embed_vector , json.dumps(doc.metadata) ) )
 

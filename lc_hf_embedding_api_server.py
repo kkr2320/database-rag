@@ -1,11 +1,9 @@
 import os
-from langchain_huggingface.llms import HuggingFacePipeline
-from langchain_community.embeddings  import HuggingFaceBgeEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.runnables import RunnablePassthrough , RunnableLambda 
 from typing import List
 from fastapi import FastAPI, Request
 from langserve import add_routes
-from langchain_core.output_parsers import StrOutputParser
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
@@ -17,19 +15,16 @@ model_kwargs = {
     }
 encode_kwargs = {'normalize_embeddings': True}
 
-embeddings = HuggingFaceBgeEmbeddings(
+embeddings = HuggingFaceEmbeddings(
     model_name=model_name,
     model_kwargs=model_kwargs,
-    encode_kwargs=encode_kwargs,
-    query_instruction = "search_query:",
-    embed_instruction = "search_document:"
+    encode_kwargs=encode_kwargs
 )
 
-def embed_text(args: str) -> dict:
-    print(args)
+def embed_text(args: str) -> List[float]:
     return embeddings.embed_query(args)
 
-embed_chain = RunnableLambda(embed_text(RunnablePassthrough())) | StrOutputParser()
+embed_chain = RunnableLambda(embed_text) 
             
 
 #Define the LangServe with FastAPI
